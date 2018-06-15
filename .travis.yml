@@ -26,7 +26,7 @@ install:
 script:
    - ls -l
    - pwd
-   - nosetests --rednose -v --with-coverage
+   - nosetests --rednose -v --with-coverage --cover-package=mupif
    - codecov -F unittests
    - pwd
    - pushd mupif/examples
